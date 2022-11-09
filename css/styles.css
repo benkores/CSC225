@@ -1,0 +1,197 @@
+#banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#bannerimage {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#bannertitle {
+    position: absolute;
+    top: 110px;
+    font-size: 80px;
+    left: 30%;
+    color: black;
+    font-style: italic;
+    font-family: 'Courier New';
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 8vw;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+nav li a:hover {
+    background-color: white;
+}
+
+body {
+    margin: 0px;
+    background-color: #111;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+    margin: 10px;
+}
+
+.section_title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    margin:10px;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+}
+
+.centeredtext {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.leftimg {
+    float: left;
+    padding-left: 50px;
+    object-fit: contain;
+}
+
+.rightimg {
+    float: right;
+    padding-right: 50px;
+    object-fit: contain;
+}
+
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    object-fit: contain;
+}
+
+#included li {
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+li {
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+input[type="number"] {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+#zip,
+#billing_zip {
+    width: 125px;
+}
+
+#securitycode {
+    width: 100px;
+}
+
+select {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+}
+
+textarea {
+    padding:10px;
+    margin:10px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+#submitbutton {
+    background-color: green;
+    color: white;
+    width: 20%;
+}
+
+#submitbutton:hover {
+    background-color: blue;
+}
+
+label {
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    vertical-align: middle;
+    margin:10px;
+}

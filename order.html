@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Kitchen | Order Cookbook</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/chef.png">
+</head>
+
+<body>
+    <div id="banner">
+        <img src="imgs/banner.jpg" alt="banner" id="bannerimage">
+        <h1 id="bannertitle">Ben's Kitchen</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="order.html">Order Cookbook</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br>
+    <img class="image centerimg" src="imgs/cookbook.jpg" alt="cookbook">
+    <h1 class="centeredtext">Ben's Kitchen Cookbook with 60+ recipes for only $19.99! (US Only) </h1><br>
+    <h1>What's included?</h1>
+    <ul id="included">
+        <li>20 Breakfast recipes</li>
+        <li>20 Lunch + Dinner recipes</li>
+        <li>20 Dessert recipes</li>
+        <li>Private YouTube video link for each recipe so you can see it in action!</li>
+    </ul><br>
+    <h1>Are you ready to buy? Just fill out the form below!</h1>
+    <hr>
+    <form action="order.html" method="get" autocomplete="on">
+        <label for="quantity">Quantity:*</label>
+        <select id="quantity" name="quantity" required>
+            <option value="">Choose one</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+        <label for="addons">Select addons:</label>
+        <select name="addons" id="addons" multiple>
+            <option value="hat_apron">Chef hat and apron - $5.99</option>
+            <option value="spice_kit">Spice kit - $10.99</option>
+            <option value="drink_cookbook">Drink cookbook with 20+ recipes - $10.99</option>
+            <option value="whisk_tins">Muffin tins and whisk - $5.99</option>
+        </select>
+        <h1><u>Personal Information</u></h1>
+        <label for="fname">First Name:*</label>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last Name:*</label>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="email">Email address:*</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="##########"><br>
+        <h1><u>Shipping Information</u></h1>
+        <h1>Shipping speed:*</h1>
+        <input type="radio" id="standard" name="shipping_speed" value="standard" required>
+        <label for="standard">Standard (3-5) days - Free</label><br>
+        <input type="radio" id="express" name="shipping_speed" value="express">
+        <label for="express">Express (1-2) days - $9.99</label><br><br>
+        <label for="address">Address:*</label>
+        <input type="text" id="address" name="address" required><br>
+        <label for="city">City:*</label>
+        <input type="text" id="city" name="city" required><br>
+        <label for="state">State:*</label>
+        <select id="state" name="state" required>
+            <option value="">Choose one</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AR">AR</option>
+            <option value="AZ">AZ</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DC">DC</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="IA">IA</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="MA">MA</option>
+            <option value="MD">MD</option>
+            <option value="ME">ME</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MO">MO</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="NC">NC</option>
+            <option value="NE">NE</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NV">NV</option>
+            <option value="NY">NY</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WI">WI</option>
+            <option value="WV">WV</option>
+            <option value="WY">WY</option>
+        </select><br>
+        <label for="zip">Zip Code:*</label>
+        <input type="number" id="zip" name="zip" required><br>
+        <h1><u>Payment Information</u></h1>
+        <p>Visa, Discover, Mastercard, and American Express accepted</p>
+        <label for="cardname">Name on card:*</label>
+        <input type="text" id="cardname" name="cardname" required><br>
+        <label for="cardnum">Card number:*</label>
+        <input type="text" id="cardnum" name="cardnum" required><br>
+        <label for="securitycode">Security code:*</label>
+        <input type="number" id="securitycode" name="securitycode" min="000" max="999" required><br>
+        <label for="billing_address">Billing Address:*</label>
+        <input type="text" id="billing_address" name="billing_address" required><br>
+        <label for="billing_city">City:*</label>
+        <input type="text" id="billing_city" name="billing_city" required><br>
+        <label for="billing_state">State:*</label>
+        <select id="billing_state" name="billing_state" required>
+            <option value="">Choose one</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AR">AR</option>
+            <option value="AZ">AZ</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DC">DC</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="IA">IA</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="MA">MA</option>
+            <option value="MD">MD</option>
+            <option value="ME">ME</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MO">MO</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="NC">NC</option>
+            <option value="NE">NE</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NV">NV</option>
+            <option value="NY">NY</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WI">WI</option>
+            <option value="WV">WV</option>
+            <option value="WY">WY</option>
+        </select><br>
+        <label for="billing_zip">Zip Code:*</label>
+        <input type="number" id="billing_zip" name="billing_zip" required><br><br>
+        <label for="requests">Any special requests or instructions?</label><br><br>
+        <textarea id="requests" name="requests" rows="10" cols="100"></textarea><br>
+        <input type="submit" id="submitbutton">
+    </form>
+    <footer>
+        <hr>
+        <p>Copyright © 2022 Benjamin Kores. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
