@@ -1,1 +1,1 @@
-# CSC225
+# CSC225-Project1
